@@ -58,7 +58,7 @@ const HandleCrearProducto = async (req, res) => {
 // obtener productos por el id_usuario
 const HandleObtenerProductosByUsuario = async (req, res) => {
   try {
-    const { id_usuario } = req.params; // Asegúrate de que el frontend pase el id_usuario
+    const { id_usuario } = req.params; 
     const productos = await obtenerProductosByUsuario(id_usuario);
 
     if (!productos.length) {
